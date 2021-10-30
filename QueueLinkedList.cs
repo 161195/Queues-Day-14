@@ -8,7 +8,6 @@ namespace Queue_Day14
 {
     class QueueLinkedList
     {
-         
         internal Node top;                              //instead of head we use top and bottom in stacks
 
         internal void Push(int data)                   //creating the psuh method which is similar to add first method in linkedlist
@@ -73,7 +72,7 @@ namespace Queue_Day14
     {
         internal Node front;                            //we use front and rear in queus
 
-        internal void Display()          //the display method is similar to the display method of linkeddlist
+        internal void Display()                         //the display method is similar to the display method of linkeddlist
         {
             Node temp = this.front;
             if (temp == null)
@@ -106,6 +105,14 @@ namespace Queue_Day14
             Console.WriteLine("{0} added into Queue", node.data);
         }
 
+        internal void Dequeue()                                                //deletes the first node of the queue
+        {
+            if (this.front == null)
+                Console.WriteLine("Deletion is not posssible");
+
+            Console.WriteLine("Deleted node from Queue: " + this.front.data);  //prints the deleted node
+            this.front = this.front.next;
+        }
 
 
     }

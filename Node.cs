@@ -17,5 +17,6 @@ namespace Queue_Day14
             this.data = data;
 
         }
+
     }
 }

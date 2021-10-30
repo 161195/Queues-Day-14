@@ -6,11 +6,14 @@ namespace Queue_Day14
     {
         static void Main(string[] args)
         {
+
             QueuesLinkedList queues = new QueuesLinkedList();          //creating the queue object and calling it
             queues.Enqueue(56);
             queues.Enqueue(30);
             queues.Enqueue(70);
+            queues.Dequeue();                                         //dequeue meaning deletion from the first or top
             queues.Display();
+
         }
     }
 }
